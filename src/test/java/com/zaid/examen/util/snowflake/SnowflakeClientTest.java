@@ -32,7 +32,6 @@ class SnowflakeClientTest {
         when(conn.createStatement()).thenReturn(stmt);
         when(stmt.executeQuery(anyString())).thenReturn(rs);
 
-        // Simular 1 fila
         when(rs.next()).thenReturn(true, false);
         when(rs.getLong("C_CUSTOMER_SK")).thenReturn(1L);
         when(rs.getString("C_FIRST_NAME")).thenReturn("Ana");
@@ -106,13 +105,9 @@ class SnowflakeClientTest {
         when(rs.getString("C_LAST_NAME")).thenReturn("Lopez");
         when(rs.getString("C_EMAIL_ADDRESS")).thenReturn("ana@x.com");
 
-        // Nullable ints (simula null en SQL)
         when(rs.getInt("C_BIRTH_DAY")).thenReturn(0);
-        when(rs.wasNull()).thenReturn(true); // para C_BIRTH_DAY => null
+        when(rs.wasNull()).thenReturn(true);
 
-        // OJO: como getNullableInt llama rs.wasNull() después de C_BIRTH_DAY,
-        // para los siguientes, simulamos no-null:
-        // Truco: hacemos que wasNull() cambie: [true, false, false]
         when(rs.wasNull()).thenReturn(true, false, false);
         when(rs.getInt("C_BIRTH_MONTH")).thenReturn(2);
         when(rs.getInt("C_BIRTH_YEAR")).thenReturn(1999);

@@ -46,7 +46,7 @@ class ActuatorHealthTest {
                 .thenReturn(Health.down().withDetail("snowflake", "unreachable").build());
 
         mockMvc.perform(get("/actuator/health"))
-                .andExpect(status().isServiceUnavailable()) // Actuator responde 503 cuando status DOWN
+                .andExpect(status().isServiceUnavailable())
                 .andExpect(jsonPath("$.status").value("DOWN"))
                 .andExpect(jsonPath("$.components.snowflake.status").value("DOWN"));
     }
