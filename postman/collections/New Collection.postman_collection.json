@@ -1,0 +1,231 @@
+{
+  "info": {
+    "_postman_id": "5ee901a8-d54d-4ae4-b83e-91041acb0c29",
+    "name": "Examen",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Prueba",
+      "id": "8d593e1a-1f30-4c16-9563-3bdac86a0059",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/test/snowflake",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "test",
+            "snowflake"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Enviar registro",
+      "id": "c6e717ba-3f7d-4cb8-bb3b-c61ce2eba952",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/customers/fetch/28437730",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "customers",
+            "fetch",
+            "28437730"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Enviar registro",
+      "id": "9c154ae8-16a9-41d6-b396-e2c283cc41f1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":28437730\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/customers/fetch",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "customers",
+            "fetch"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener registros",
+      "id": "8bb48eb1-acba-4bdd-84fb-c4ca358935ce",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/customers/mongo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "customers",
+            "mongo"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Paginación",
+      "id": "5b6ff066-c2f1-44dc-8e1e-c0564473ccb9",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/customers?page=0&size=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "customers"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "0",
+              "uuid": "1884e712-1bc6-4d83-8efc-0ac6bc5ba751"
+            },
+            {
+              "key": "size",
+              "value": "5",
+              "uuid": "ae5de7bc-17c1-4cdc-bc34-689c43977758"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Paginación",
+      "id": "34c5af71-5f9b-4074-b514-be5ce73e6258",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"page\":0,\r\n    \"pageSize\":5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/customers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "customers"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "d2b6b84d-4611-4649-a23a-5da3f695a157",
+          "name": "Paginación",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"page\":0,\r\n    \"pageSize\":5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/customers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "customers"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Request-Id",
+              "value": "40dc9b2f-b298-4103-949d-b43c394dd486"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 21 Jan 2026 19:19:08 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": "2026-01-21T19:20:45.204Z",
+          "body": "{\n    \"codigo\": \"200.EXAMEN.CUSTOMERS.LIST.1\",\n    \"id\": \"40dc9b2f-b298-4103-949d-b43c394dd486\",\n    \"mensaje\": \"La petición se ha procesado exitosamente.\",\n    \"respuesta\": [\n        {\n            \"id\": 1,\n            \"firstName\": \"Javier\",\n            \"lastName\": \"Lewis\",\n            \"email\": \"Javier.Lewis@VFAxlnZEvOx.org\"\n        },\n        {\n            \"id\": 2,\n            \"firstName\": \"Amy\",\n            \"lastName\": \"Moses\",\n            \"email\": \"Amy.Moses@Ovk9KjHH.com\"\n        },\n        {\n            \"id\": 3,\n            \"firstName\": \"Latisha\",\n            \"lastName\": \"Hamilton\",\n            \"email\": \"Latisha.Hamilton@V.com\"\n        },\n        {\n            \"id\": 4,\n            \"firstName\": \"Michael\",\n            \"lastName\": \"White\",\n            \"email\": \"Michael.White@i.org\"\n        },\n        {\n            \"id\": 5,\n            \"firstName\": \"Robert\",\n            \"lastName\": \"Moran\",\n            \"email\": \"Robert.Moran@Hh.edu\"\n        }\n    ]\n}"
+        }
+      ]
+    }
+  ]
+}
