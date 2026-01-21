@@ -1,0 +1,140 @@
+Ejemplo 200 de la respuesta al endpoint de la Paginacion:
+{
+    "codigo": "200.EXAMEN.CUSTOMERS.LIST.1",
+    "id": "f1927f1a-d16a-4de0-863d-b61f74f65486",
+    "mensaje": "La petición se ha procesado exitosamente.",
+    "respuesta": [
+        {
+            "id": 1,
+            "firstName": "Javier",
+            "lastName": "Lewis",
+            "email": "Javier.Lewis@VFAxlnZEvOx.org"
+        },
+        {
+            "id": 2,
+            "firstName": "Amy",
+            "lastName": "Moses",
+            "email": "Amy.Moses@Ovk9KjHH.com"
+        },
+        {
+            "id": 3,
+            "firstName": "Latisha",
+            "lastName": "Hamilton",
+            "email": "Latisha.Hamilton@V.com"
+        },
+        {
+            "id": 4,
+            "firstName": "Michael",
+            "lastName": "White",
+            "email": "Michael.White@i.org"
+        },
+        {
+            "id": 5,
+            "firstName": "Robert",
+            "lastName": "Moran",
+            "email": "Robert.Moran@Hh.edu"
+        }
+    ]
+}
+Ejemplo 200 de la respuesta al endpoint de envio de ID a Kafka:
+{
+    "codigo": "200.EXAMEN.CUSTOMERS.FETCH.1",
+    "id": "570643da-be38-44cf-9a7e-6824ac39b793",
+    "mensaje": "Registro enviado con Kafka.."
+}
+Ejemplo 200 de la respuesta del endpoint que obtiene registros del topic de Kafka:
+{
+    "codigo": "200.EXAMEN.CUSTOMERS.MONGO.1",
+    "id": "c4eb4fc5-015d-46e7-b796-5237bd1aa076",
+    "mensaje": "La petición se ha procesado exitosamente.",
+    "respuesta": [
+        {
+            "id": "69705c7e9fca2ab962937418",
+            "customerId": 28437730,
+            "firstName": "Cheryl",
+            "lastName": "Ramsey",
+            "birthDay": 16,
+            "birthMonth": 1,
+            "birthYear": 1965,
+            "email": "Cheryl.Ramsey@uaq4mXuuV3.org",
+            "address": {
+                "street": "Spring ",
+                "city": "Oak Grove",
+                "state": "ND",
+                "country": "United States",
+                "street_number": null
+            },
+            "receivedAt": "2026-01-21T04:56:30.689Z"
+        },
+        {
+            "id": "6970601edf2ed770243fd4ba",
+            "customerId": 28437730,
+            "firstName": "Cheryl",
+            "lastName": "Ramsey",
+            "birthDay": 16,
+            "birthMonth": 1,
+            "birthYear": 1965,
+            "email": "Cheryl.Ramsey@uaq4mXuuV3.org",
+            "address": {
+                "street": "Spring ",
+                "city": "Oak Grove",
+                "state": "ND",
+                "country": "United States",
+                "street_number": "300"
+            },
+            "receivedAt": "2026-01-21T05:11:58.388Z"
+        },
+        {
+            "id": "6970742d0419af4f2d033e28",
+            "customerId": 28437730,
+            "firstName": "Cheryl",
+            "lastName": "Ramsey",
+            "birthDay": 16,
+            "birthMonth": 1,
+            "birthYear": 1965,
+            "email": "Cheryl.Ramsey@uaq4mXuuV3.org",
+            "address": {
+                "street": "Spring ",
+                "city": "Oak Grove",
+                "state": "ND",
+                "country": "United States",
+                "street_number": "300"
+            },
+            "receivedAt": "2026-01-21T06:37:33.632Z"
+        },
+        {
+            "id": "697120641928ab6bd8e8869a",
+            "customerId": 28437730,
+            "firstName": "Cheryl",
+            "lastName": "Ramsey",
+            "birthDay": 16,
+            "birthMonth": 1,
+            "birthYear": 1965,
+            "email": "Cheryl.Ramsey@uaq4mXuuV3.org",
+            "address": {
+                "street": "Spring ",
+                "city": "Oak Grove",
+                "state": "ND",
+                "country": "United States",
+                "street_number": "300"
+            },
+            "receivedAt": "2026-01-21T18:52:20.068Z"
+        }
+    ]
+}
+Errores:
+{
+    "codigo": "EXAMEN.GENERAL.ERROR",
+    "id": "19e83a68-122b-476f-8ef3-b64f3f360490",
+    "mensaje": "Required request parameter 'page' for method parameter type int is not present"
+}
+{
+    "codigo": "EXAMEN.GENERAL.ERROR",
+    "id": "f5b7aa3d-620b-43b8-9d28-6f5ababe3d32",
+    "mensaje": "No static resource api/customers."
+}
+{
+    "codigo": "400.EXAMEN.CUSTOMERS.LIST.-1",
+    "id": "06e6f5ce-080c-4554-85c8-7a82cb931566",
+    "mensaje": "Petición procesada con error, favor de validar."
+}
