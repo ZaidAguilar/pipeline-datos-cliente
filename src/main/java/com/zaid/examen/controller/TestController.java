@@ -45,7 +45,7 @@ public class TestController {
     @Value("${snowflake.role}")
     private String role;
 
-    @GetMapping("/health/snowflake")
+    @GetMapping("/test/snowflake")
     public ResponseEntity<ApiResponseDto<Map<String, Object>>> testSnowflake() {
         log.info("Incoming request: /health/snowflake");
 

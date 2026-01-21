@@ -37,7 +37,7 @@ public class ApiResponses {
 
         ApiResponseDto<T> resp = ApiResponseDto.<T>builder()
                 .codigo(codigo)
-                .id(currentRequestId())     // 👈 MISMO id que logs
+                .id(currentRequestId())
                 .mensaje(mensaje)
                 .respuesta(body)
                 .build();

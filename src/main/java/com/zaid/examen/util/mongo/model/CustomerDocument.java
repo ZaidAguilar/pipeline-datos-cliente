@@ -10,7 +10,7 @@ import java.time.Instant;
 @Document(collection = "customer_data")
 public class CustomerDocument {
 
-    private String id; // mongo _id
+    private String id;
     private long customerId;
     private String firstName;
     private String lastName;
